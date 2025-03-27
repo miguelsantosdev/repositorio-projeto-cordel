@@ -1,0 +1,102 @@
+:root {
+    --fonte1: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', small-caps ,sans-serif;
+    --fonte2: "Caveat", cursive; 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    background-color: darkkhaki;
+    min-height: 100vh;
+}
+
+header {
+    background-color: darkslategrey;
+    color: white;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+header > h1{
+    font-variant: small-caps;
+    padding-top: 50px;
+    font-size: 6vw;
+}
+
+header > a{
+    font-style: italic;
+    font-family: var(--fonte1)
+}
+
+header > p {
+    padding-bottom: 50px;   
+}
+
+a {
+    font-weight: bolder;
+    color: white;
+    text-decoration: none;
+}
+
+header a:hover{
+    text-decoration: dotted;
+    color: black;
+}
+
+section {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    line-height: 1.5em;
+    padding-left: 60px;
+    font-size: 3vw;
+}
+
+
+section.normal {
+    background-color:khaki;
+    color: black;
+    font-family: var(--fonte2);
+    font-weight: bolder;
+    font-size: 1.5em;
+}
+
+section.imagem {
+    font-family: var(--fonte2);
+    font-weight:bold;
+    font-style: normal;
+    color: white;
+    font-size: 1.5em;
+    box-shadow: inset 5px 5px 10px 0px  rgba(0, 0, 0, 0.842);
+    background-attachment: fixed;
+}
+
+section.imagem > p {
+    background-color: rgba(151, 151, 32, 0.596);
+    max-width: 250px;
+    text-shadow: 3px 3px 2px black;
+}
+
+section#img01 {
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;
+}
+
+section#img02 {
+    background-image: url(../imagens/background002.jpg);
+    background-position: right center;
+}
+
+footer a:hover{
+    color: black;
+    text-decoration: underline;
+}
+
+footer{
+    background-color: darkslategrey;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
